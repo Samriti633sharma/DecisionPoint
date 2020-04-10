@@ -1,0 +1,8 @@
+<div ng-controller="userDetailController">
+      <div class="loader" ng-if="globalLoader"></div>
+    <h3 class="usrDetail">{{userId}}. {{userName}}</h3>
+    <div class="details" ng-repeat="detail in userDetail">
+       <p class="detailTitle"> {{detail.title}}</p>
+       <p> {{detail.body}}</p>
+     </div>
+</div>

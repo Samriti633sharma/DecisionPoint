@@ -1,0 +1,18 @@
+<div ng-controller="userController">
+    <div class="topBox">
+        <div class="text">Search:</div>
+            <!-- <input class="searchBox" ng-model="$ctrl.query" /> -->
+            <div>
+            <input type="text" name="uname" id="uname" ng-model="uname" ng-keyup="complete(uname)" class="form-control searchBox" ng-blur="hidethis" />  
+            <button class="close-icon close_btn" type="reset" ng-model="hidecross" ng-hide="hidecross" ng-click="clearSearch()">X
+            </button>
+            <ul class="list-group searchBox searchedItems" ng-model="hidethis" ng-hide="hidethis">  
+                <li class="list-group-item" ng-repeat="userData in filterName track by $index" ng-click="fillTextbox(userData)">{{userData}}</li>  
+           </ul> 
+        </div>  
+    </div>
+    <div ng-repeat="user in userList | filter: uid" class="userLIst" ng-click="userDetail(user.id)">
+       {{user.id}}
+       <a href="#!/users/{{user.id}}/{{user.name}}"  target="_blank"> {{user.name}}</a>
+    </div>
+</div>

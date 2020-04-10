@@ -1,0 +1,18 @@
+.bullet { font: 10px sans-serif; }
+.bullet .marker { stroke: #000; stroke-width: 2px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #eee; }
+.bullet .range.s1 { fill: #dcacac; }
+.bullet .range.s2 { fill: #dcacac; }
+
+.bullet .green.s0 { fill: #eee; }
+.bullet .range.green.s1 { fill: #99c999; }
+.bullet .range.green.s2 { fill: #99c999; }
+
+.bullet .measure.s0 { fill: #c76161; }
+.bullet .measure.s1 { fill: #c76161; }
+.bullet .measure.green.s0 { fill: #6eb76e; }
+.bullet .measure.green.s1 { fill: #6eb76e; }
+
+.bullet .title { font-size: 14px; font-weight: bold; }
+.bullet .subtitle { fill: #999; }

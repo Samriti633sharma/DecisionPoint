@@ -1,0 +1,12 @@
+Part 1:
+npm start to run the project.
+
+Part 2:
+
+D3 graphs have been used to represent the dataset.
+To load local file(csv file) there was CROS error so locally i enabled file access in chrome in my system.
+
+To run this application:
+1.Enable cros to run this file locally
+	chrome--allow-file-access-from-files
+2.Open index.html file for the dataset graph.

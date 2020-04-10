@@ -1,0 +1,26 @@
+{
+  "name": "DecisionPointAssignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run copy-libs",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,jquery/dist}/**/*\" app/lib -C",
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.9",
+    "angular-route": "^1.7.9",
+    "jquery": "^3.4.1",
+    "ui-router": "^1.0.0-alpha.3"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "http-server": "^0.12.1"
+  }
+}
